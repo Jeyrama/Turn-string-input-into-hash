@@ -25,3 +25,19 @@ function strToHash(str){
 }
 
 // or
+
+function strToHash (str) {
+  if (str.length === 0) return {};
+  
+  const DELIMITER = ", ";
+  const OPERATOR = "=";
+  
+  const entries = str
+      .split(DELIMITER)
+      .map(pair => {
+          const [key, number] = pair.split(OPERATOR);
+          return [key, Number(number)];
+      });
+  
+  return Object.fromEntries(entries);
+}
