@@ -7,3 +7,6 @@ The string will be formatted as such:
 This string should return a hash that looks like
 { 'a': 1, 'b': 2, 'c': 3, 'd': 4}
 */
+
+
+// Solution
