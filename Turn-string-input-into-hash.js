@@ -23,3 +23,5 @@ function strToHash(str){
   }
   return result
 }
+
+// or
